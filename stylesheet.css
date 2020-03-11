@@ -245,6 +245,7 @@ white-space: nowrap;
 .putin_pic {
   height: auto;
   width: 100%
+     object-fit: cover;
 }
 
 .title {
