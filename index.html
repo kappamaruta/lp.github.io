@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+
+
+  <!-- Place favicon.ico in the root directory -->
+  <link href="https://fonts.googleapis.com/css2?family=Cambo&display=swap" rel="stylesheet">
+
+  <link href="./stylesheet.css" rel="stylesheet">
+
+  <meta content="#fafafa" name="theme-color">
+
+</head>
+
+<body>
+
+<div class="container">
+  <main class="main">
+<header class="sp_only">
+    <div id="navArea">
+
+      <nav>
+        <div class="inner">
+          <ul>
+            <li class="nav__menu-item">Home</li>
+            <li class="nav__menu-item">About Us</li>
+            <li class="nav__menu-item">Army</li>
+            <li class="nav__menu-item">Privacy Policy</li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="toggle_btn" id="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="mask"></div>
+
+    </div></header>
+    <div class="wrapper">
+      <div class="left_wrapper">
+        <h2 class="title">
+          The Most Badass Leader Of All Time
+
+        </h2>
+        <p class="title__text">I mean...just look at his face. He ain’t playing. </p>
+
+        <a class="btn" href="#">Join Us</a>
+      </div>
+      <div class="image__wrapper">
+        <img alt="putin's pic" class="putin_pic" src="./img/putin.png"></div>
+
+
+    </div>
+
+  </main>
+  <aside class="aside pc_only">
+    <header>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__menu-item">Home</li>
+          <li class="nav__menu-item">About Us</li>
+          <li class="nav__menu-item">Army</li>
+          <li class="nav__menu-item">Privacy Policy</li>
+        </ul>
+      </nav>
+    </header>
+
+  </aside>
+</div>
+
+<script>function toggleNav() {
+  const nav = document.getElementById('navArea');
+  const btn = document.getElementById('toggle_btn');
+  const mask = document.getElementById('mask');
+  const open = 'open'; // class
+
+  // console.log(nav, btn, mask, open);
+  // menu open close
+  btn.onclick = () => {
+    if (nav.className !== open) {
+      nav.classList.add(open);
+    }else{
+      nav.classList.remove(open);
+    }
+  };
+  mask.onclick = () => {
+    nav.classList.remove(open);
+
+  };
+}
+
+toggleNav();</script>
+
+
+</body>
+
+</html>
